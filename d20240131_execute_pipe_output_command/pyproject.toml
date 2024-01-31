@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "d20240131-execute-pipe-output-command"
+version = "0.1.0"
+description = ""
+authors = ["Atsushi Morimoto (74th) <74th.tech@gmail.com>"]
+readme = "README.md"
+packages = [{include = "d20240131_execute_pipe_output_command"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
