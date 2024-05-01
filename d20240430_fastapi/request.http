@@ -1,0 +1,23 @@
+### 正しい型
+POST http://127.0.0.1:8000/user
+Content-Type: application/json
+
+{
+    "id": 100,
+    "group": 300
+}
+
+### 誤った型
+POST http://127.0.0.1:8000/user
+Content-Type: application/json
+
+{
+    "id": "test",
+    "group": "test"
+}
+
+### GETの例
+GET http://127.0.0.1:8000/user/100
+
+### GETの例、エラー
+GET http://127.0.0.1:8000/user/1000
