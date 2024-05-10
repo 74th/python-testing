@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "depended"
+version = "0.1.0"
+description = ""
+authors = ["Atsushi Morimoto (74th) <74th.tech@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+google-cloud-storage = { version = "^2.16.0", optional = true }
+google-cloud-bigquery = { version = "^3.22.0", optional = true }
+
+[tool.poetry.extras]
+storage = ["google-cloud-storage"]
+bq = ["google-cloud-bigquery"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

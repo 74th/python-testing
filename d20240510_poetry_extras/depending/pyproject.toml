@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "depending"
+version = "0.1.0"
+description = ""
+authors = ["Atsushi Morimoto (74th) <74th.tech@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+depended = {path = "../depended", extras = ["bq"]}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
