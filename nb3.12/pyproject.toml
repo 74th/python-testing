@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "nb3-12"
+version = "0.1.0"
+description = ""
+authors = ["Atsushi Morimoto (74th) <74th.tech@gmail.com>"]
+readme = "README.md"
+packages = [{include = "nb3"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jupyter = "^1.0.0"
+pandas = "^2.2.0"
+pydantic = "^2.7.0"
+pandera = "^0.18.3"
+pandantic = "^0.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
